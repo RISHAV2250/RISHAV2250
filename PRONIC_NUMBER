@@ -1,0 +1,36 @@
+import java.util.*;
+class PRONIC_FUNCTION
+{
+  boolean check(int a)
+   {
+
+       int pro;
+       for(int i=1;i<a;i++)//loop
+       {
+            pro=i*(i+1);//pronic formula
+           if(a==pro)
+           {
+               return true;
+           }
+
+
+       }
+
+       return false;
+   }
+   public static void main(String[] args)
+   {
+       Scanner sc=new Scanner(System.in);
+       PRONIC_FUNCTION obj=new PRONIC_FUNCTION();//object created
+
+       System.out.println("Enter your preffred pronic number: ");
+       int num=sc.nextInt();
+
+       if (obj.check(num)) {
+           System.out.println("Its  a proic number");
+       } else {
+           System.out.println("Its not a pronic number");
+
+       }
+   }
+}
